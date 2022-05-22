@@ -11,6 +11,10 @@ void exeOpcode(char *string[], stack_t *stack)
 
 	instruction_t names[] = {
 		{"pall", pall},
+		{"pint", pint},
+		{"pop", pop},
+		{"swap", swap},
+		{"add", add},
 		{"null", NULL}
 	};
 

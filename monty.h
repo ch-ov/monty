@@ -2,6 +2,7 @@
 #define MONTY_H
 
 #include <stdlib.h>
+#include <unistd.h>
 #include <stdio.h>
 
 /**
@@ -38,6 +39,10 @@ typedef struct instruction_s
 
 void push(stack_t **stack, unsigned int count, int n);
 void pall(stack_t **stack, unsigned int count);
+void pint(stack_t **stack, unsigned int count);
+void pop(stack_t **stack, unsigned int count);
+void swap(stack_t **stack, unsigned int count);
+void add(stack_t **stack, unsigned int count);
 
 /* func aux for opcodes */
 
