@@ -34,4 +34,19 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+/* opcodes */
+
+void push(stack_t **stack, unsigned int count, int n);
+void pall(stack_t **stack, unsigned int count);
+
+/* func aux for opcodes */
+
+void exeOpcode(char *string[], stack_t *stack);
+void freeStack(stack_t *head);
+void freeContent(char *a[]);
+int findNewLine(char *content);
+int checkNumber(char *content, int line);
+int pushInt(char *content, int line);
+int _strcmp(char *s1, char *s2);
+
 #endif
